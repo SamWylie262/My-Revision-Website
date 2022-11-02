@@ -1,13 +1,9 @@
-{% extends "base.html" %} {% block title %}Revision{% endblock %} {% block content
-    %}
-    <br>
-    <h1 align="center">Revision</h1>
-    <br>
-    <hr>
-    <br>
+<h1 align="center">Revision</h1>
+
+    <script type="text/javascript" src="./js/index.js"></script>
     <marquee>
         <p>
-            <strong><font size="+2">ANKI Decks for all my A Level Subjects coming out soon!</font></strong>
+            <strong><span style="font-size: 144%; ">ANKI Decks for all my A Level Subjects coming out soon!</span></strong>
         <p>
     </marquee>
     <hr>    
@@ -31,7 +27,7 @@
                     margin-right: 10px; 
                   }
             </style>
-            <img src="/static/IMG-8121.JPG">
+            <img src="/assets/IMG-8121.JPG" alt="Me!">
             <div>
                 <ul>
                     <li>Higher Maths</li>            
@@ -54,49 +50,7 @@
                 And I am going to teach you how to achieve an A*<br> in all of these subjects
             </div>
         </p>
-        <br>
-        <div class="offcanvas offcanvas-start text-bg-dark" id="Notes">
-            <div class="offcanvas-header">
-              <h1 class="offcanvas-title">Make Notes Here</h1>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
-            </div>
-            <div class="offcanvas-body">
-              <h1 align="center">Notes</h1>
-              <br>
-              <ul class="list-group list-group-flush" id="notes">
-                {% for note in user.notes %}
-                <br>
-                <li class="list-group-item">
-                  {{ note.data }}
-                  <button type="button" class="close" onClick="deleteNote({{ note.id }})">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </li>
-                {% endfor %}
-              </ul>
-              <form method="POST">
-                <br>
-                <textarea name="note" id="note" class="form-control"></textarea>
-                <br />
-                <div align="center">
-                  <button type="submit" class="btn btn-primary">Add Note</button>
-                </div>
-              </form>
-            </div>
-          </div>
-          
-          <div class="container-fluid mt-3">
-            <h3>Fancy making some notes on what you see here?</h3>
-            <p>Use the offcanvas menu to add and delete saved notes to your desire.</p>
-            <p><strong>Tip:</strong> Why not make note of future revision techniques you'd like to try?</p>
-            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#Notes">
-              Open Note Taking Sidebar
-            </button>
-          </div>
-        <div>
-        <br>
-        <hr>
-        <br>
+ </br>
 
 <style>
             .button {
@@ -124,7 +78,7 @@
               }
         </style>
         <button class="button button1 btn-lg float-right" onclick="toggleText1()">v</button>
-        <h3>Maths (and Add maths)</h3> 
+        <h3>Maths (and Additional Maths)</h3>
         <br>
         <p id="Myid">To revise for Maths, you should..
             <br>
@@ -313,5 +267,4 @@
                 }
             }
         </script>
-        </div>
-    {% endblock %}
+ </div>

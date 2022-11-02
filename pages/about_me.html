@@ -1,25 +1,16 @@
-{% extends "base.html" %} {% block title %}About Me{% endblock %} {% block content
-    %}
-    <br>
-    <h1 align="center">About Me</h1>
-    <br>
-    <div style="text-align: center;">
+<h1 align="center">About Me</h1>
+<div>
+    <link rel="stylesheet" href="../css/about_me.css">
     <p>
-        Helllo all, and welcome to my About Me page where I Will give you an entire rundown of what made me, me!
+        Hello all, and welcome to my About Me page where I Will give you an entire rundown of what made me, me!
     </p>
     <p>
-        This is me, 16 years of age in a London Cable Car - it is also my linkedin profile picture which can be found <a href="https://www.linkedin.com/in/samuel-wylie-6a171a250/">here</a>
+        This is me, 16 years of age in a London Cable Car - it is also my LinkedIn profile picture which can be found <a href="https://www.linkedin.com/in/samuel-wylie-6a171a250/">here</a>
     </p>
-    <style>
-        img {  
-            width: 20%;
-            height: 20%;
-          }
-    </style>
     <div>
-        <img src="/static/Profile Photo.JPG">
-        <img src="/static/IMG-8115.JPG">
-        <img src="/static/IMG-8113.JPG">
+        <img src="/assets/ProfilePhoto.JPG" id="pic1">
+        <img src="/assets/IMG-8115.JPG" id="pic2">
+        <img src="/assets/IMG-8113.JPG" id="pic3">
     </div>
 
     
@@ -37,5 +28,4 @@
         <br>
         Furthermore, I have been lucky enough to have had the cultural eye-opening experience of living abroad: spending one year in Croatia, one year in Abu Dhabi and six years in Qatar!
     </p>
-    </div>
-    {% endblock %}
+</div>
